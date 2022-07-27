@@ -64,25 +64,25 @@ if(st.button('Predict Diabete')):
 		query = np.array([grossesses_norm, age_norm, insuline_norm])
 
 		query = query.reshape(1, 3)
-    		print(query)
-    		prediction = rf.predict(query)[0]
-    		st.title("Predicted value " + str(prediction) + str(nom_fichier[0]) )
+		print(query)
+    	prediction = rf.predict(query)[0]
+    	st.title("Predicted value " + str(prediction) + str(nom_fichier[0]) )
 
 	elif (selected == nom_fichier[1]): 
 		query = np.array([grossesses_norm, age_norm, insuline_norm])
 
 		query = query.reshape(1, 3)
-    		print(query)
-    		prediction = rf.predict(query)[0]
-    		st.title("Predicted value " + str(prediction) + str(nom_fichier[1])) 
+    	print(query)
+    	prediction = rf.predict(query)[0]
+    	st.title("Predicted value " + str(prediction) + str(nom_fichier[1])) 
 		
 	elif (selected == nom_fichier[2]): 
 		query = np.array([grossesses_norm, age_norm, insuline_norm])
 
 		query = query.reshape(1, 3)
-    		print(query)
-    		prediction = rf.predict(query)[0]
-    		st.title("Predicted value " + str(prediction) + str(nom_fichier[2])) 
+    	print(query)
+    	prediction = rf.predict(query)[0]
+    	st.title("Predicted value " + str(prediction) + str(nom_fichier[2])) 
 
 
 	
